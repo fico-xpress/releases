@@ -16,21 +16,30 @@ additional details and information about obtaining a paid license.
 ## Downloads
 
 Each version of FICO&reg; Xpress Optimization is published as a [GitHub Release](https://github.com/fico-xpress/releases/releases)
-tagged with its version number (for example `v9.9.0`). Each release includes the Xpress Solver
-engine, its APIs, and the Mosel distribution, attached as installers/archives, one per supported
-platform:
+tagged with its version number (for example `v9.9.0`).  Each release includes the Xpress Solver
+engine, its APIs, and the Xpress Mosel distribution, attached as installers, one per supported
+platform. The Windows installer also contains the full Xpress Workbench distribution and the Linux installers contain the Xpress Workbench client:    
 
-| Platform | File pattern |
+| Platform | File pattern (Installers) |
 |---|---|
-| Windows | `xp<version>_win_x86_64_setup.exe` (installer), `xp<version>_win_x86_64.zip` (archive) |
+| Windows | `xp<version>_win_x86_64_setup.exe` |
 | macOS (ARM) | `FICO.Xpress.<version>.for.ARM.Mac.Installer.dmg` |
 | Linux (x86_64) | `xp<version>_linux_x86_64_setup.tar` |
 | Linux (ARM64) | `xp<version>_linux_aarch64_setup.tar` |
 
+Alternatively, the release downloads are available in the form of archives, with the same contents as the installers, except for Xpress Workbench. For Windows, a second archive (`_workbench.zip`) is provided that includes the full Workbench distribution.
+
+| Platform | File pattern (Archives) |
+|---|---|
+| Windows | `xp<version>_win_x86_64.zip`, `xp<version>_win_x86_64_workbench.zip` |
+| macOS (ARM) | `xp<version>_macos_arm64.tgz` |
+| Linux (x86_64) | `xp<version>_linux_x86_64.tar` |
+| Linux (ARM64) | `xp<version>_linux_aarch64.tar` |
+
 ## Release notes
 
-Release notes are published in the description of each GitHub Release, not duplicated here. See
-the notes for a given version on its [release page](https://github.com/fico-xpress/releases/releases).
+Release notes are published with the [FICO&reg; Xpress Optimization documentation](https://www.fico.com/fico-xpress-optimization/docs/), not duplicated here. Follow
+the link to the notes for a given version on its [release page](https://github.com/fico-xpress/releases/releases).
 
 ## Useful links
 
