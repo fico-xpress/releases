@@ -15,6 +15,8 @@ additional details and information about obtaining a paid license.
 
 ## Downloads
 
+__[Download link for the latest version of Xpress](https://github.com/fico-xpress/releases/releases/tag/v9.9.0)__
+
 Each version of FICO&reg; Xpress Optimization is published as a [GitHub Release](https://github.com/fico-xpress/releases/releases)
 tagged with its version number (for example `v9.9.0`).  Each release includes the Xpress Solver
 engine, its APIs, and the Xpress Mosel distribution, attached as installers, one per supported
