@@ -25,7 +25,7 @@ platform. The Windows installer also contains the full Xpress Workbench distribu
 | Platform | File pattern (Installers) |
 |---|---|
 | Windows | `xp<version>_win_x86_64_setup.exe` |
-| macOS (ARM) | `FICO.Xpress.<version>.for.ARM.Mac.Installer.dmg` |
+| macOS (ARM) | `xp<version>_macos_arm64_setup.dmg` |
 | Linux (x86_64) | `xp<version>_linux_x86_64_setup.tar` |
 | Linux (ARM64) | `xp<version>_linux_aarch64_setup.tar` |
 
