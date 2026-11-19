@@ -7,6 +7,7 @@ All FICO&reg; Xpress Optimization releases, newest version first.
 | [FICO Xpress 10.0.0](https://github.com/fico-xpress/releases/releases/tag/v10.0.0) (latest) | `v10.0.0` | 2026-10-29 |
 | [FICO Xpress 9.9.1](https://github.com/fico-xpress/releases/releases/tag/v9.9.1) | `v9.9.1` | 2026-11-16 |
 | [FICO Xpress 9.9.0](https://github.com/fico-xpress/releases/releases/tag/v9.9.0) | `v9.9.0` | 2026-09-25 |
+| [FICO Xpress 9.8.2](https://github.com/fico-xpress/releases/releases/tag/v9.8.2) | `v9.8.2` | 2026-11-19 |
 | [FICO Xpress 9.8.1](https://github.com/fico-xpress/releases/releases/tag/v9.8.1) | `v9.8.1` | 2026-11-16 |
 | [FICO Xpress 9.8.0](https://github.com/fico-xpress/releases/releases/tag/v9.8.0) | `v9.8.0` | 2026-11-19 |
 | [FICO Xpress 9.7.2](https://github.com/fico-xpress/releases/releases/tag/v9.7.2) | `v9.7.2` | 2026-11-19 |
