@@ -1,0 +1,53 @@
+name: Update RELEASES.md
+
+on:
+  release:
+    types: [published, edited, deleted]
+  workflow_dispatch:        # allows a manual run from the Actions tab
+
+permissions:
+  contents: write           # needed to push the commit
+
+concurrency:
+  group: releases-index
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generate RELEASES.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          {
+            echo "# Releases"
+            echo
+            echo "All FICO&reg; Xpress Optimization releases, newest version first."
+            echo
+            echo "| Release | Tag | Published |"
+            echo "|---|---|---|"
+            gh release list --repo "$REPO" --limit 1000 --exclude-drafts \
+              --json name,tagName,publishedAt,isPrerelease,isLatest \
+              | jq -r --arg repo "$REPO" '
+                  sort_by(.tagName | ltrimstr("v") | split(".") | map(tonumber? // 0)) | reverse | .[]
+                  | "| [\(if .name == "" then .tagName else .name end)](https://github.com/\($repo)/releases/tag/\(.tagName))"
+                    + (if .isLatest then " (latest)" else "" end)
+                    + (if .isPrerelease then " (pre-release)" else "" end)
+                    + " | `\(.tagName)` | \(.publishedAt[:10]) |"'
+          } > RELEASES.md
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain RELEASES.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add RELEASES.md
+            git commit -m "Update RELEASES.md"
+            git push
+          fi
