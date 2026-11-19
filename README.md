@@ -35,9 +35,9 @@ Alternatively, the release downloads are available in the form of archives, with
 | Platform | File pattern (Archives) |
 |---|---|
 | Windows | `xp<version>_win_x86_64.zip`, `xp<version>_win_x86_64_workbench.zip` |
-| macOS (ARM) | `xp<version>_macos_arm64.tgz` |
-| Linux (x86_64) | `xp<version>_linux_x86_64.tar` |
-| Linux (ARM64) | `xp<version>_linux_aarch64.tar` |
+| macOS (ARM) | `xp<version>_macos_arm64.tar.gz` |
+| Linux (x86_64) | `xp<version>_linux_x86_64.tar.gz` |
+| Linux (ARM64) | `xp<version>_linux_aarch64.tar.gz` |
 
 ## Release notes
 
