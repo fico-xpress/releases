@@ -19,7 +19,7 @@ __[Download link for the latest version of Xpress](https://github.com/fico-xpres
 
 
 Each version of FICO&reg; Xpress Optimization is published as a [GitHub Release](https://github.com/fico-xpress/releases/releases)
-tagged with its version number (for example `v9.9.0`).  Each release includes the Xpress Solver
+tagged with its version number (for example `v9.9.0`). See [RELEASES.md](RELEASES.md) for a list of all releases sorted by version. Each release includes the Xpress Solver
 engine, its APIs, and the Xpress Mosel distribution, attached as installers, one per supported
 platform. The Windows installer also contains the full Xpress Workbench distribution and the Linux installers contain the Xpress Workbench client:    
 
